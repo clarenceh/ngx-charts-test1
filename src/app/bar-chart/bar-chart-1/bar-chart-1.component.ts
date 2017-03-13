@@ -10,6 +10,7 @@ export class BarChart1Component implements OnInit {
   @Input() data;
 
   view: any[] = [600, 400];
+  // view: any[] = undefined;
 
   // options
   showXAxis = true;
