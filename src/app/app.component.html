@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+
+  <div fxFlex="50%">
+    <app-bar-chart-1 [data]="chartData | async"></app-bar-chart-1>
+  </div>
+
+  <div fxFlex="50%">
+    <h2>Chart 2</h2>
+  </div>
+
+</div>

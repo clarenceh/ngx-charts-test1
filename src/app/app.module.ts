@@ -9,6 +9,8 @@ import { MaterialModule } from '@angular/material';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
+import { BarChartModule } from './bar-chart/bar-chart.module';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -22,7 +24,8 @@ import { AppComponent } from './app.component';
     HttpModule,
     MaterialModule.forRoot(),
     FlexLayoutModule.forRoot(),
-    NgxChartsModule
+    NgxChartsModule,
+    BarChartModule
   ],
   providers: [
     MdIconRegistry

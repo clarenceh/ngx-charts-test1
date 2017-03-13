@@ -1,16 +1,24 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import { MdIconRegistry } from '@angular/material';
+import { Observable } from 'rxjs/Rx';
+
+import { ChartDataService } from './bar-chart/chart-data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit {
 
-  constructor(private mdIconRegistry: MdIconRegistry) {
+  chartData: Observable<any>;
+
+  constructor(private mdIconRegistry: MdIconRegistry,
+    private chartDataService: ChartDataService) {
     mdIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+  }
+
+  ngOnInit() {
+    this.chartData = this.chartDataService.getSingle();
   }
 }
