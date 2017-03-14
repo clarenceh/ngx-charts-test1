@@ -1,11 +1,12 @@
-<div fxLayout="row" fxLayoutAlign="space-around center" >
-
-  <div fxFlex="50%">
-    <app-bar-chart-1 [data]="chartData | async"></app-bar-chart-1>
-  </div>
-
-  <div fxFlex="50%">
-    <h2>Chart 2</h2>
-  </div>
-
-</div>
+<md-card>
+  <md-card-title> <a href="" target="_blank">Chaer demo</a></md-card-title>
+  <md-card-subtitle>Using 'fxFill' to fill available width and height of parent container.</md-card-subtitle>
+  <md-card-content class="chart-container">
+    <div fxLayout="column" fxFill>
+        <div fxLayout="row" fxFlex >
+          <app-bar-chart-1 [data]="chartData | async" fxFlex="50"></app-bar-chart-1>
+          <app-bar-chart-1 [data]="chartData | async" fxFlex="50"></app-bar-chart-1>
+        </div>
+    </div>
+  </md-card-content>
+</md-card>
