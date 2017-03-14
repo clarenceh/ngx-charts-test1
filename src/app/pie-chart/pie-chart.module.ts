@@ -2,21 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
-
-import { BarChart1Component } from './bar-chart-1/bar-chart-1.component';
+import { PieChart1Component } from './pie-chart-1/pie-chart-1.component';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule
   ],
-  declarations: [
-    BarChart1Component
-  ],
-  providers: [
-  ],
+  declarations: [PieChart1Component],
   exports: [
-    BarChart1Component
+    PieChart1Component
   ]
 })
-export class BarChartModule { }
+export class PieChartModule { }

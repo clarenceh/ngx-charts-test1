@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MdIconRegistry } from '@angular/material';
 import { Observable } from 'rxjs/Rx';
 
-import { ChartDataService } from './bar-chart/chart-data.service';
+import { ChartDataService } from './core/chart-data.service';
 
 @Component({
   selector: 'app-root',

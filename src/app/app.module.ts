@@ -9,7 +9,9 @@ import { MaterialModule } from '@angular/material';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
+import { CoreModule } from './core/core.module';
 import { BarChartModule } from './bar-chart/bar-chart.module';
+import { PieChartModule } from './pie-chart/pie-chart.module';
 
 import { AppComponent } from './app.component';
 
@@ -22,10 +24,12 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    CoreModule,
     MaterialModule.forRoot(),
     FlexLayoutModule.forRoot(),
     NgxChartsModule,
-    BarChartModule
+    BarChartModule,
+    PieChartModule
   ],
   providers: [
     MdIconRegistry

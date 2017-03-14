@@ -1,0 +1,13 @@
+<ngx-charts-pie-chart
+  [scheme]="colorScheme"
+  [results]="data"
+  [legend]="showLegend"
+  [explodeSlices]="explodeSlices"
+  [labels]="showLabels"
+  [doughnut]="doughnut"
+  [arcWidth]="arcWidth"
+  (legendLabelClick)="onLegendLabelClick($event)"
+  [gradient]="gradient"
+  [tooltipDisabled]="tooltipDisabled"
+  (select)="select($event)">
+</ngx-charts-pie-chart>
